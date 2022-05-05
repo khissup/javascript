@@ -10,6 +10,9 @@
                 s=s.toLowerCase().replace(/[^a-z]/g, '');
                 if(s.split('').reverse().join('')!==s) return "NO";
                 return answer;
+                // replace(/[^a-z]/g, ''); <- a-z(영어소문자)가 아닌것들을 전부 ''<-빈문자열로 바꾸겠다는소리
+                // 그담 스플릿으로 다시 문자로쪼갠후 배열로 만들어서, reverse로 앞뒤바꾼후, 그걸 다시 join으로 문자열로 만들고
+                // 그것이 기존 문자열과 같은지 판단하는것임
             }
             
             let str="found7, time: study; Yduts; emit, 7Dnuof";
