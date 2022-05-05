@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+                let total = a + b + c;
+                max = a > b ? a : b;
+                max = max > c ? max : c;
+                if(total - max <= max) answer = "NO";
+
+                return answer;
+            }
+            // 짧은 두 변의 길이의 합이 나머지 가장 긴 변의 길이보다
+            // 길 경우 삼각형 성립
+
+            console.log(solution(13, 23, 17));
+        </script>
+    </body>
+</html>

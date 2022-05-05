@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n){
+                let answer;
+                answer=Math.ceil(n/12);
+                // Math.ceil = 인수보다 크거나 같은 수 중에서
+                // 가장 작은 정수를 반환합니다.
+                
+                // answer = n / 12;
+                // java랑 다르게 딱히 int같은식으로 나뉘어진게 아니라서
+                // 위에 Math같은걸로 해야 깔끔하게 정수로 딱 떨어짐
+                return answer;
+            }
+
+            console.log(solution(178));
+        </script>
+    </body>
+</html>

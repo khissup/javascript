@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){         
+                let answer, min=Number.MAX_SAFE_INTEGER;
+                // Number.MAX_SAFE_INTEGER ( 2^53 - 1 )
+                // javascript에서 나타낼 수 있는 안전한 최대 정수값
+                for(let i = 0; i < arr.length; i++) {
+                    if(arr[i] < min) {
+                        min = arr[i];
+                    }
+                }
+                /*
+                let answer = Math.min(...arr); 이런식으로
+                내장함수 사용해서 최솟값 구할 수 있음.
+                근데 Math.min(arr);하면 값안나오고, ...arr넣어줘야
+                배열 안의 값을 수나적으로 나열해서 넣어준다는 의미가됨.
+                Math.min.apply(null, arr);도 가능한데 별로 좋아보이진않음
+                */
+                return min;
+                //
+            }
+
+            let arr=[5, 7, 15, 3, 2, 9, 11];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
