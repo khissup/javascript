@@ -41,7 +41,7 @@ class Div
 		   따라서 테스트를 수행할 때에는 아래 주석을 지우고 이 메소드를 사용하셔도 좋습니다.
 		   단, 채점을 위해 코드를 제출하실 때에는 반드시 이 메소드를 지우거나 주석 처리 하셔야 합니다.
 		*/
-        System.setIn(new java.io.FileInputStream("C:\\Users\\user\\Downloads\\sample_input.txt"));
+        System.setIn(new java.io.FileInputStream("C:\\Users\\KH\\Downloads\\sample_input.txt"));
 
 
 		/*
