@@ -6,6 +6,6 @@ public class BirthDayTest {
         date.setMonth(12);
         date.setDay(30);
 
-        date.showDate();//
+        date.showDate();////
     }
 }
